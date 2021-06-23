@@ -1,0 +1,1502 @@
+INFO 2021-06-10 20:22:54,017 basehttp 124 "GET / HTTP/1.1" 200 1716
+INFO 2021-06-10 21:17:18,673 basehttp 124 "GET / HTTP/1.1" 200 1716
+WARNING 2021-06-10 21:17:18,889 base 152 Not Found: /favicon.ico
+WARNING 2021-06-10 21:17:18,890 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1966
+ERROR 2021-06-10 21:17:35,231 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2021-06-10 21:17:35,279 basehttp 124 "GET / HTTP/1.1" 400 68535
+ERROR 2021-06-10 21:17:35,723 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2021-06-10 21:17:35,743 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 68619
+ERROR 2021-06-10 21:17:42,418 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2021-06-10 21:17:42,436 basehttp 124 "GET / HTTP/1.1" 400 68670
+ERROR 2021-06-10 21:17:42,613 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2021-06-10 21:17:42,637 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 68880
+INFO 2021-06-10 21:19:33,523 basehttp 124 "GET / HTTP/1.1" 200 1716
+WARNING 2021-06-10 21:19:33,620 base 152 Not Found: /favicon.ico
+WARNING 2021-06-10 21:19:33,621 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1972
+INFO 2021-06-10 21:31:00,090 basehttp 124 "GET /register HTTP/1.1" 301 0
+ERROR 2021-06-10 21:31:00,096 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'jinja2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 10, in get
+    return render(request, 'register.html')
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\template\backends\jinja2.py", line 38, in __init__
+    self.env = environment_cls(**options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\utils\jinja2_env.py", line 9, in jinja2_environment
+    'static': staticfiles.url,
+AttributeError: module 'django.contrib.staticfiles.templatetags.staticfiles' has no attribute 'url'
+ERROR 2021-06-10 21:31:00,168 basehttp 124 "GET /register/ HTTP/1.1" 500 121410
+INFO 2021-06-10 21:33:07,824 basehttp 124 "GET /register/ HTTP/1.1" 200 3282
+WARNING 2021-06-10 21:33:07,844 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 404 1676
+WARNING 2021-06-10 21:33:07,846 basehttp 124 "GET /static/css/main.css HTTP/1.1" 404 1655
+WARNING 2021-06-10 21:33:07,846 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 404 1658
+WARNING 2021-06-10 21:33:07,847 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 404 1664
+WARNING 2021-06-10 21:33:07,865 basehttp 124 "GET /static/js/common.js HTTP/1.1" 404 1655
+WARNING 2021-06-10 21:33:07,866 basehttp 124 "GET /static/js/host.js HTTP/1.1" 404 1649
+WARNING 2021-06-10 21:33:07,867 basehttp 124 "GET /static/js/register.js HTTP/1.1" 404 1661
+WARNING 2021-06-10 21:34:11,976 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 404 1658
+WARNING 2021-06-10 21:34:11,978 basehttp 124 "GET /static/css/main.css HTTP/1.1" 404 1655
+INFO 2021-06-10 21:34:14,528 basehttp 124 "GET /register/ HTTP/1.1" 200 3282
+WARNING 2021-06-10 21:34:14,544 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 404 1658
+WARNING 2021-06-10 21:34:14,546 basehttp 124 "GET /static/css/main.css HTTP/1.1" 404 1655
+WARNING 2021-06-10 21:34:14,549 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 404 1664
+WARNING 2021-06-10 21:34:14,550 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 404 1676
+WARNING 2021-06-10 21:34:14,630 basehttp 124 "GET /static/js/host.js HTTP/1.1" 404 1649
+WARNING 2021-06-10 21:34:14,632 basehttp 124 "GET /static/js/common.js HTTP/1.1" 404 1655
+WARNING 2021-06-10 21:34:14,632 basehttp 124 "GET /static/js/register.js HTTP/1.1" 404 1661
+INFO 2021-06-10 21:35:19,501 basehttp 124 "GET /register/ HTTP/1.1" 200 3282
+INFO 2021-06-10 21:35:19,520 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-10 21:35:19,522 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-10 21:35:19,522 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-10 21:35:19,522 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-10 21:35:19,608 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-10 21:35:19,610 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 7825
+INFO 2021-06-10 21:35:19,610 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-10 21:35:19,622 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-10 21:35:19,622 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2021-06-10 21:35:19,623 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-10 21:35:40,269 basehttp 124 "GET /register/ HTTP/1.1" 200 3282
+WARNING 2021-06-11 20:19:36,463 base 152 Not Found: /
+WARNING 2021-06-11 20:19:36,464 basehttp 124 "GET / HTTP/1.1" 404 2093
+WARNING 2021-06-11 20:19:36,681 base 152 Not Found: /favicon.ico
+WARNING 2021-06-11 20:19:36,681 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2144
+INFO 2021-06-11 20:19:42,973 basehttp 124 "GET /register HTTP/1.1" 301 0
+INFO 2021-06-11 20:19:42,987 basehttp 124 "GET /register/ HTTP/1.1" 200 4450
+INFO 2021-06-11 20:19:43,000 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-11 20:19:43,003 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2551
+INFO 2021-06-11 20:19:43,003 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-11 20:19:43,003 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-11 20:19:43,004 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-11 20:19:43,005 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-11 20:19:43,021 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-11 20:19:43,022 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+WARNING 2021-06-11 20:19:50,997 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:19:53,349 basehttp 124 "GET /register/ HTTP/1.1" 200 4450
+WARNING 2021-06-11 20:19:53,487 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:21:28,499 basehttp 124 "GET /register/ HTTP/1.1" 200 4449
+INFO 2021-06-11 20:21:28,514 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-11 20:21:28,514 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+WARNING 2021-06-11 20:21:28,633 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:21:28,648 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-11 20:21:28,648 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-11 20:21:28,649 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2021-06-11 20:21:46,273 basehttp 124 "GET /register/ HTTP/1.1" 200 4449
+WARNING 2021-06-11 20:21:46,412 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:22:07,161 basehttp 124 "GET /register/ HTTP/1.1" 200 4449
+WARNING 2021-06-11 20:22:07,295 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:23:55,479 basehttp 124 "GET /register/ HTTP/1.1" 200 4449
+INFO 2021-06-11 20:23:55,490 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 20:23:55,594 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:24:51,168 basehttp 124 "GET /register/ HTTP/1.1" 200 4468
+INFO 2021-06-11 20:24:51,184 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-11 20:24:51,187 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-11 20:24:51,187 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-11 20:24:51,188 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2551
+INFO 2021-06-11 20:24:51,189 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-11 20:24:51,189 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-11 20:24:51,191 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-11 20:24:51,267 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-11 20:24:51,268 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+WARNING 2021-06-11 20:24:51,298 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:24:51,303 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-11 20:24:51,303 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-11 20:24:51,304 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-11 20:24:51,370 base 152 Not Found: /favicon.ico
+WARNING 2021-06-11 20:24:51,370 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2144
+INFO 2021-06-11 20:28:22,188 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:28:22,199 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 20:28:22,304 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:30:33,878 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:30:33,888 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 20:30:34,001 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:34:28,092 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:34:28,103 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2551
+WARNING 2021-06-11 20:34:28,213 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:36:41,120 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:36:41,136 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-11 20:36:41,138 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-11 20:36:41,138 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-11 20:36:41,138 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2502
+INFO 2021-06-11 20:36:41,139 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-11 20:36:41,140 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-11 20:36:41,141 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-11 20:36:41,217 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-11 20:36:41,217 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+WARNING 2021-06-11 20:36:41,244 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:36:41,249 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-11 20:36:41,249 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-11 20:36:41,250 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-11 20:36:41,307 base 152 Not Found: /favicon.ico
+WARNING 2021-06-11 20:36:41,308 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2144
+INFO 2021-06-11 20:37:50,141 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:37:50,153 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2548
+WARNING 2021-06-11 20:37:50,265 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 20:38:39,396 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:45:20,156 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:45:21,019 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:45:21,031 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 20:45:21,141 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 20:45:44,190 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:46:00,703 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 20:46:12,275 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:46:42,697 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 20:47:01,588 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:49:09,132 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:49:09,254 base 152 Not Found: /favicon.ico
+WARNING 2021-06-11 20:49:09,254 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2144
+WARNING 2021-06-11 20:49:34,376 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:51:10,612 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:56:41,393 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:57:16,158 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 20:57:16,280 base 152 Not Found: /favicon.ico
+WARNING 2021-06-11 20:57:16,280 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2144
+WARNING 2021-06-11 20:57:25,151 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 20:57:26,752 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 20:57:26,763 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 20:57:26,859 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 20:57:46,962 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 21:03:59,794 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+INFO 2021-06-11 21:08:09,063 basehttp 124 "GET /register/ HTTP/1.1" 200 4482
+INFO 2021-06-11 21:08:09,130 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 2547
+WARNING 2021-06-11 21:08:28,813 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 21:08:47,889 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 21:09:47,989 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 21:10:05,908 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+INFO 2021-06-11 21:13:05,117 basehttp 124 "GET /register/ HTTP/1.1" 200 4589
+INFO 2021-06-11 21:13:05,185 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:13:11,961 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 21:13:30,684 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+WARNING 2021-06-11 21:23:03,157 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+INFO 2021-06-11 21:24:14,817 basehttp 124 "GET /register/ HTTP/1.1" 200 4599
+INFO 2021-06-11 21:24:14,881 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:24:32,357 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-11 21:24:36,490 basehttp 124 "POST /register/ HTTP/1.1" 400 25
+ERROR 2021-06-11 21:25:11,927 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 55, in post
+    login(user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2021-06-11 21:25:11,950 basehttp 124 "POST /register/ HTTP/1.1" 500 82952
+INFO 2021-06-11 21:26:12,912 basehttp 124 "POST /register/ HTTP/1.1" 200 4599
+WARNING 2021-06-11 21:26:13,042 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:26:37,030 basehttp 124 "POST /register/ HTTP/1.1" 200 4599
+INFO 2021-06-11 21:26:37,041 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:26:37,141 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:28:20,233 basehttp 124 "POST /register/ HTTP/1.1" 200 4599
+WARNING 2021-06-11 21:28:20,369 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:30:08,733 basehttp 124 "POST /register/ HTTP/1.1" 200 4599
+INFO 2021-06-11 21:30:08,744 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:30:08,858 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:32:58,194 basehttp 124 "GET /register/ HTTP/1.1" 200 4599
+INFO 2021-06-11 21:32:58,281 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:33:01,748 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:33:15,214 basehttp 124 "POST /register/ HTTP/1.1" 200 4599
+WARNING 2021-06-11 21:33:15,323 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-11 21:34:17,526 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis AuthenticationError: Authentication required.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 55, in post
+    login(request, user)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\auth\__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 311, in cycle_key
+    self.create()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\cache\backends\base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 39, in _decorator
+    raise e.parent
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1581, in exists
+    return self.execute_command('EXISTS', *names)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-11 21:34:17,570 basehttp 124 "POST /register/ HTTP/1.1" 500 157407
+INFO 2021-06-11 21:35:59,300 basehttp 124 "GET /register/ HTTP/1.1" 200 4599
+INFO 2021-06-11 21:35:59,312 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-11 21:35:59,424 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-11 21:36:26,666 basehttp 124 "POST /register/ HTTP/1.1" 200 39
+INFO 2021-06-14 10:18:04,764 basehttp 124 "GET /register/ HTTP/1.1" 200 4589
+INFO 2021-06-14 10:18:04,994 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-14 10:18:05,207 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+ERROR 2021-06-14 10:18:35,090 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis AuthenticationError: Authentication required.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 56, in post
+    login(request, user)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\auth\__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 311, in cycle_key
+    self.create()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\cache\backends\base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 39, in _decorator
+    raise e.parent
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1581, in exists
+    return self.execute_command('EXISTS', *names)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-14 10:18:35,140 basehttp 124 "POST /register/ HTTP/1.1" 500 157395
+INFO 2021-06-14 10:18:35,606 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:24:52,026 basehttp 124 "POST /register/ HTTP/1.1" 200 4589
+INFO 2021-06-14 10:24:52,222 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+WARNING 2021-06-14 10:26:09,496 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1766
+ERROR 2021-06-14 10:26:47,993 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis AuthenticationError: Authentication required.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 56, in post
+    login(request, user)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\auth\__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 311, in cycle_key
+    self.create()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\cache\backends\base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\cache.py", line 39, in _decorator
+    raise e.parent
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django_redis\client\default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1581, in exists
+    return self.execute_command('EXISTS', *names)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-14 10:26:48,059 basehttp 124 "POST /register/ HTTP/1.1" 500 157391
+INFO 2021-06-14 10:26:48,632 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:29:10,298 basehttp 124 "POST /register/ HTTP/1.1" 200 4589
+WARNING 2021-06-14 10:29:10,438 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1766
+INFO 2021-06-14 10:29:10,502 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+ERROR 2021-06-14 10:32:24,291 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\urls\base.py", line 77, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contexts'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 57, in post
+    return redirect(render(reverse('contexts:index')))
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\urls\base.py", line 87, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contexts' is not a registered namespace
+ERROR 2021-06-14 10:32:24,318 basehttp 124 "POST /register/ HTTP/1.1" 500 95179
+INFO 2021-06-14 10:32:24,600 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:34:13,955 basehttp 124 "GET /register/ HTTP/1.1" 200 4589
+INFO 2021-06-14 10:34:14,221 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+ERROR 2021-06-14 10:34:32,942 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 57, in post
+    return redirect(render(reverse('contents:index')))
+TypeError: render() missing 1 required positional argument: 'template_name'
+ERROR 2021-06-14 10:34:32,965 basehttp 124 "POST /register/ HTTP/1.1" 500 82868
+INFO 2021-06-14 10:34:33,218 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:36:46,534 basehttp 124 "GET /register/ HTTP/1.1" 200 4589
+INFO 2021-06-14 10:36:46,672 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:36:49,445 basehttp 124 "GET /register/ HTTP/1.1" 200 4589
+INFO 2021-06-14 10:36:49,519 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 10:37:07,033 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-14 10:37:07,036 basehttp 124 "GET / HTTP/1.1" 200 30173
+INFO 2021-06-14 10:37:07,050 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-14 10:37:07,050 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-14 10:37:07,051 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-14 10:37:07,081 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-14 10:37:07,082 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2021-06-14 10:37:07,086 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-14 10:37:07,086 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-14 10:37:07,098 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-14 10:37:07,098 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-14 10:37:07,098 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-14 10:37:07,099 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-14 10:37:07,099 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-14 10:37:07,099 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-14 10:37:07,105 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-14 10:37:07,106 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-14 10:37:07,106 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-14 10:37:07,106 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-14 10:37:07,106 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-14 10:37:07,148 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 30173
+INFO 2021-06-14 10:37:07,151 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-14 10:37:07,264 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,877 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,895 basehttp 124 "GET /usernames/yangmi/static/css/reset.css HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,896 basehttp 124 "GET /usernames/yangmi/static/css/main.css HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,899 basehttp 124 "GET /usernames/yangmi/static/js/host.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,902 basehttp 124 "GET /usernames/yangmi/static/js/common.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,907 basehttp 124 "GET /usernames/yangmi/static/js/vue-2.5.16.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,910 basehttp 124 "GET /usernames/yangmi/static/js/axios-0.18.0.min.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,913 basehttp 124 "GET /usernames/yangmi/static/js/jquery-1.12.4.min.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,916 basehttp 124 "GET /usernames/yangmi/static/images/logo.png HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,917 basehttp 124 "GET /usernames/yangmi/static/images/slide01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,961 basehttp 124 "GET /usernames/yangmi/static/js/slide.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,962 basehttp 124 "GET /usernames/yangmi/static/js/index.js HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,962 basehttp 124 "GET /usernames/yangmi/static/images/slide02.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,965 basehttp 124 "GET /usernames/yangmi/static/images/slide03.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,975 basehttp 124 "GET /usernames/yangmi/static/images/adv01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,977 basehttp 124 "GET /usernames/yangmi/static/images/slide04.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,979 basehttp 124 "GET /usernames/yangmi/static/images/banner01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,983 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods003.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,986 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods002.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,989 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods001.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,992 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods004.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,994 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods005.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:45,996 basehttp 124 "GET /usernames/yangmi/static/images/banner02.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:46,002 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods008.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:46,005 basehttp 124 "GET /usernames/yangmi/static/images/banner03.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:46,006 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods009.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 11:55:46,076 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:29,476 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:29,503 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,338 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,366 basehttp 124 "GET /usernames/yangmi/static/css/reset.css HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,366 basehttp 124 "GET /usernames/yangmi/static/css/main.css HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,368 basehttp 124 "GET /usernames/yangmi/static/js/host.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,374 basehttp 124 "GET /usernames/yangmi/static/js/common.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,375 basehttp 124 "GET /usernames/yangmi/static/js/vue-2.5.16.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,382 basehttp 124 "GET /usernames/yangmi/static/js/axios-0.18.0.min.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,383 basehttp 124 "GET /usernames/yangmi/static/js/jquery-1.12.4.min.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,385 basehttp 124 "GET /usernames/yangmi/static/images/logo.png HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,386 basehttp 124 "GET /usernames/yangmi/static/images/slide01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,425 basehttp 124 "GET /usernames/yangmi/static/js/index.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,425 basehttp 124 "GET /usernames/yangmi/static/js/slide.js HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,428 basehttp 124 "GET /usernames/yangmi/static/images/slide02.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,429 basehttp 124 "GET /usernames/yangmi/static/images/slide03.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,432 basehttp 124 "GET /usernames/yangmi/static/images/slide04.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,439 basehttp 124 "GET /usernames/yangmi/static/images/adv01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,441 basehttp 124 "GET /usernames/yangmi/static/images/banner01.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,445 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods003.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,449 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods002.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,455 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods001.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,459 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods004.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,462 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods005.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,465 basehttp 124 "GET /usernames/yangmi/static/images/banner02.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,468 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods008.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,472 basehttp 124 "GET /usernames/yangmi/static/images/banner03.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,472 basehttp 124 "GET /usernames/yangmi/static/images/goods/goods009.jpg HTTP/1.1" 200 30173
+INFO 2021-06-14 12:11:54,519 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 30173
+INFO 2021-06-14 12:14:08,374 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 30173
+INFO 2021-06-14 12:17:12,917 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 30173
+ERROR 2021-06-14 12:18:45,844 exception 135 Internal Server Error: /usernames/yangmi/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 27, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 12:18:45,940 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 500 82437
+WARNING 2021-06-14 12:45:34,653 base 152 Not Found: /
+WARNING 2021-06-14 12:45:34,653 basehttp 124 "GET / HTTP/1.1" 404 2320
+WARNING 2021-06-14 12:45:35,613 base 152 Not Found: /favicon.ico
+WARNING 2021-06-14 12:45:35,613 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+INFO 2021-06-14 12:45:51,006 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-14 12:45:59,053 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:46:51,473 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-14 12:46:51,588 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:46:51,606 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:47:51,867 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-14 12:47:51,995 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:47:52,006 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:48:46,047 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-14 12:48:49,779 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:48:49,793 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:48:56,139 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 12:48:56,159 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-14 12:48:56,164 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-14 12:48:56,166 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3028
+INFO 2021-06-14 12:48:56,166 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-14 12:48:56,168 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-14 12:48:56,168 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-14 12:48:56,170 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-14 12:48:56,338 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-14 12:48:56,338 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+WARNING 2021-06-14 12:48:56,380 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:48:56,404 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:48:56,420 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-14 12:48:56,420 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-14 12:48:56,422 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-14 12:48:56,472 base 152 Not Found: /favicon.ico
+WARNING 2021-06-14 12:48:56,473 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+WARNING 2021-06-14 12:50:05,489 base 152 Not Found: /register/usernames/itcast/count/
+WARNING 2021-06-14 12:50:05,489 basehttp 124 "GET /register/usernames/itcast/count/ HTTP/1.1" 404 2434
+INFO 2021-06-14 12:52:34,515 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 12:52:34,531 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3029
+WARNING 2021-06-14 12:52:34,660 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:52:34,673 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-14 12:53:53,637 exception 135 Internal Server Error: /usernames/itcast/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 12:53:53,733 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 500 83504
+INFO 2021-06-14 12:54:28,025 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 12:54:28,042 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-14 12:54:28,195 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:54:28,208 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-14 12:54:32,382 exception 135 Internal Server Error: /usernames/itcast1/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 12:54:32,466 basehttp 124 "GET /usernames/itcast1/count/ HTTP/1.1" 500 83524
+ERROR 2021-06-14 12:54:32,470 basehttp 124 "GET /usernames/itcast1/count/ HTTP/1.1" 500 59
+INFO 2021-06-14 12:55:13,016 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 12:55:13,029 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-14 12:55:13,170 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 12:55:13,198 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-14 12:56:25,913 exception 135 Internal Server Error: /usernames/itcast1/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 12:56:26,001 basehttp 124 "GET /usernames/itcast1/count/ HTTP/1.1" 500 83524
+INFO 2021-06-14 12:58:10,208 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 12:58:11,741 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-14 12:58:11,746 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-14 12:58:11,747 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-14 12:58:11,747 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3029
+INFO 2021-06-14 12:58:11,750 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-14 12:58:11,751 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-14 12:58:11,753 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-14 12:58:11,825 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-14 12:58:11,826 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+WARNING 2021-06-14 12:58:11,890 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:58:11,895 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-14 12:58:11,906 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-14 12:58:11,907 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 12:58:11,909 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-14 12:58:11,994 base 152 Not Found: /favicon.ico
+WARNING 2021-06-14 12:58:11,996 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+ERROR 2021-06-14 12:59:16,234 exception 135 Internal Server Error: /usernames/itcast1/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 12:59:16,357 basehttp 124 "GET /usernames/itcast1/count/ HTTP/1.1" 500 83526
+INFO 2021-06-14 13:00:19,702 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 13:00:19,713 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-14 13:00:19,841 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 13:00:19,854 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-14 13:00:24,334 exception 135 Internal Server Error: /usernames/itcast/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 13:00:24,364 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 500 80979
+ERROR 2021-06-14 13:00:34,089 exception 135 Internal Server Error: /usernames/itcast/count/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\contents\views.py", line 26, in get
+    return http.JsonResponse({'code': 0, 'count': count})
+AttributeError: module 'http' has no attribute 'JsonResponse'
+ERROR 2021-06-14 13:00:34,112 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 500 80979
+INFO 2021-06-14 13:03:13,413 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 13:03:13,425 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-14 13:03:13,547 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 13:03:13,556 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 13:03:19,267 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-14 13:04:08,256 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-14 13:04:10,085 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-14 13:04:11,699 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-14 13:04:11,841 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 13:04:11,846 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-14 13:04:15,916 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-14 13:04:33,348 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-14 13:04:33,366 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-14 13:04:33,368 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-14 13:04:33,368 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-14 13:04:33,369 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-14 13:04:33,369 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3030
+INFO 2021-06-14 13:04:33,370 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-14 13:04:33,371 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-14 13:04:33,443 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-14 13:04:33,444 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-14 13:04:33,487 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-14 13:04:33,489 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-14 13:04:33,490 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-14 13:04:33,494 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 13:04:33,499 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-14 13:04:33,569 base 152 Not Found: /favicon.ico
+WARNING 2021-06-14 13:04:33,570 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+WARNING 2021-06-14 13:04:35,771 base 152 Not Found: /usernames//count/
+WARNING 2021-06-14 13:04:35,771 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2389
+INFO 2021-06-14 13:04:40,194 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-14 13:04:44,734 basehttp 124 "GET /usernames/itcasta/count/ HTTP/1.1" 200 23
+WARNING 2021-06-14 13:04:56,609 base 152 Not Found: /usernames//count/
+WARNING 2021-06-14 13:04:56,609 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2389
+WARNING 2021-06-16 19:42:29,259 base 152 Not Found: /
+WARNING 2021-06-16 19:42:29,260 basehttp 124 "GET / HTTP/1.1" 404 2320
+WARNING 2021-06-16 19:42:29,523 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 19:42:29,524 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+INFO 2021-06-16 19:42:40,281 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:42:40,295 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-16 19:42:44,405 base 152 Not Found: /usernames//count/
+WARNING 2021-06-16 19:42:44,405 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2389
+INFO 2021-06-16 19:44:27,657 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-16 19:44:30,224 base 152 Not Found: /usernames//count/
+WARNING 2021-06-16 19:44:30,224 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2389
+WARNING 2021-06-16 19:45:51,360 base 152 Not Found: /
+WARNING 2021-06-16 19:45:51,361 basehttp 124 "GET / HTTP/1.1" 404 2320
+INFO 2021-06-16 19:45:57,339 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+WARNING 2021-06-16 19:46:00,508 base 152 Not Found: /usernames//count/
+WARNING 2021-06-16 19:46:00,508 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2389
+INFO 2021-06-16 19:47:49,151 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,017 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,188 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,348 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,362 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-16 19:47:50,364 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3107
+INFO 2021-06-16 19:47:50,364 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-16 19:47:50,365 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-16 19:47:50,365 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-16 19:47:50,366 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-16 19:47:50,368 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-16 19:47:50,386 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-16 19:47:50,386 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-16 19:47:50,401 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-16 19:47:50,401 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-16 19:47:50,401 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-16 19:47:50,429 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 19:47:50,430 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+INFO 2021-06-16 19:47:50,514 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,678 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,850 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:50,999 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:51,012 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-16 19:47:51,015 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-16 19:47:51,015 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3107
+INFO 2021-06-16 19:47:51,016 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-16 19:47:51,016 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-16 19:47:51,017 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2021-06-16 19:47:51,018 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-16 19:47:51,034 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-16 19:47:51,034 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-16 19:47:51,047 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-16 19:47:51,048 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-16 19:47:51,048 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-16 19:47:51,077 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 19:47:51,078 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2371
+INFO 2021-06-16 19:47:51,174 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:51,340 basehttp 124 "GET /register/ HTTP/1.1" 200 4671
+INFO 2021-06-16 19:47:57,750 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 19:48:00,410 basehttp 124 "GET /usernames/itcasta/count/ HTTP/1.1" 200 23
+WARNING 2021-06-16 20:08:28,212 base 152 Not Found: /
+WARNING 2021-06-16 20:08:28,212 basehttp 124 "GET / HTTP/1.1" 404 2526
+INFO 2021-06-16 20:08:57,236 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3229
+INFO 2021-06-16 20:09:00,577 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3173
+INFO 2021-06-16 20:09:01,196 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3276
+INFO 2021-06-16 20:09:01,858 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3542
+INFO 2021-06-16 20:09:02,446 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3203
+WARNING 2021-06-16 20:09:02,490 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 20:09:02,491 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2577
+INFO 2021-06-16 20:09:03,048 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3082
+INFO 2021-06-16 20:09:03,578 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3174
+INFO 2021-06-16 20:09:04,079 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 2638
+INFO 2021-06-16 20:09:04,608 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3135
+WARNING 2021-06-16 20:09:04,655 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 20:09:04,656 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2577
+INFO 2021-06-16 20:09:05,195 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3289
+INFO 2021-06-16 20:09:05,517 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3827
+INFO 2021-06-16 20:09:05,752 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3306
+INFO 2021-06-16 20:09:05,977 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3018
+WARNING 2021-06-16 20:09:06,022 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 20:09:06,022 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2577
+INFO 2021-06-16 20:09:06,179 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3080
+INFO 2021-06-16 20:09:06,374 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 2951
+INFO 2021-06-16 20:09:06,573 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 2898
+INFO 2021-06-16 20:09:06,772 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 3243
+WARNING 2021-06-16 20:09:06,817 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 20:09:06,818 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2577
+INFO 2021-06-16 20:09:06,977 basehttp 124 "GET /image_codes/hshfaufuhasfhuho/ HTTP/1.1" 200 2989
+INFO 2021-06-16 20:11:33,529 basehttp 124 "GET /register/ HTTP/1.1" 200 4517
+INFO 2021-06-16 20:11:33,605 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-16 20:11:37,328 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 20:11:40,270 basehttp 124 "GET /usernames/itcasta/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 20:11:47,418 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 20:26:57,602 basehttp 124 "GET /register/ HTTP/1.1" 200 4583
+INFO 2021-06-16 20:26:57,613 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3944
+INFO 2021-06-16 20:28:18,997 basehttp 124 "GET /register/ HTTP/1.1" 200 4603
+INFO 2021-06-16 20:28:19,007 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-16 20:28:32,900 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 20:30:50,891 basehttp 124 "GET /register/ HTTP/1.1" 200 4588
+INFO 2021-06-16 20:30:50,902 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3971
+WARNING 2021-06-16 20:30:50,997 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 20:30:51,439 basehttp 124 "GET /image_codes/53cb7d06-c8ab-4a1d-82da-729049718d9b/ HTTP/1.1" 200 3289
+INFO 2021-06-16 20:30:59,865 basehttp 124 "GET /image_codes/cfda45c3-def2-440c-91ee-12a5af85be35/ HTTP/1.1" 200 2978
+INFO 2021-06-16 20:31:20,686 basehttp 124 "GET /image_codes/3898f9bc-cc8c-4446-b34b-182e2d5f03d0/ HTTP/1.1" 200 3337
+INFO 2021-06-16 20:32:36,723 basehttp 124 "GET /register/ HTTP/1.1" 200 4588
+INFO 2021-06-16 20:32:36,740 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-16 20:32:36,745 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-16 20:32:36,746 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-16 20:32:36,746 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-16 20:32:36,747 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-16 20:32:36,748 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-16 20:32:36,823 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-16 20:32:36,825 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 3971
+INFO 2021-06-16 20:32:36,852 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-16 20:32:36,852 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-16 20:32:36,857 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-16 20:32:36,857 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 20:32:36,890 basehttp 124 "GET /image_codes/98e13ed0-b994-4f40-ae51-82f5b929a4d7/ HTTP/1.1" 200 3190
+WARNING 2021-06-16 20:32:36,951 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 20:32:36,951 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2577
+INFO 2021-06-16 20:33:48,619 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 20:33:48,635 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-16 20:33:48,752 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 20:33:48,777 basehttp 124 "GET /image_codes/3113bb1e-9522-4a6e-bc55-d6781563ca35/ HTTP/1.1" 200 3184
+INFO 2021-06-16 20:35:21,527 basehttp 124 "GET /image_codes/abae34f3-fda9-4d38-baff-302bcc58ef74/ HTTP/1.1" 200 3454
+INFO 2021-06-16 21:04:31,406 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 21:04:31,419 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 4528
+WARNING 2021-06-16 21:04:31,535 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 21:04:31,569 basehttp 124 "GET /image_codes/80cbb2f8-2760-4bdd-9e36-a5742ab10020/ HTTP/1.1" 200 3829
+INFO 2021-06-16 21:09:26,755 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 21:09:26,770 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-16 21:09:26,895 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 21:09:26,923 basehttp 124 "GET /image_codes/7fcb6202-0425-477f-a1c0-7aaa248fb185/ HTTP/1.1" 200 3124
+INFO 2021-06-16 21:10:23,044 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 21:10:23,063 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-16 21:10:23,066 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-16 21:10:23,066 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-16 21:10:23,066 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-16 21:10:23,066 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-16 21:10:23,068 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-16 21:10:23,147 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-16 21:10:23,148 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 4528
+INFO 2021-06-16 21:10:23,178 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-16 21:10:23,178 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-16 21:10:23,179 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-16 21:10:23,185 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 21:10:23,213 basehttp 124 "GET /image_codes/4b3652c9-d28e-4fb6-9753-e37ffb99e16d/ HTTP/1.1" 200 3163
+WARNING 2021-06-16 21:10:23,267 base 152 Not Found: /favicon.ico
+WARNING 2021-06-16 21:10:23,267 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2790
+INFO 2021-06-16 21:10:25,375 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:10:31,844 basehttp 124 "GET /mobile/15009718759/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:10:39,424 basehttp 124 "GET /mobile/15009718758/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:11:42,041 basehttp 124 "GET /mobile/15009718758/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:11:49,120 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:11:52,887 basehttp 124 "GET /mobile/15009718758/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:12:02,197 basehttp 124 "GET /mobile/15009718758/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:12:11,911 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:12:27,667 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:12:27,667 basehttp 124 "GET /mobile/15009718758/count/ HTTP/1.1" 200 23
+ERROR 2021-06-16 21:12:27,760 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 57, in post
+    return redirect(reverse('contents:index'))
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+ERROR 2021-06-16 21:12:27,793 basehttp 124 "POST /register/ HTTP/1.1" 500 95718
+INFO 2021-06-16 21:14:23,500 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 21:14:23,515 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-16 21:14:23,645 basehttp 124 "GET /image_codes/69c5f2b5-f702-4144-af6f-65806a7e8f03/ HTTP/1.1" 200 3393
+WARNING 2021-06-16 21:14:23,962 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-16 21:14:28,284 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:14:38,014 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:14:42,787 basehttp 124 "GET /mobile/15009718759/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:14:49,280 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:14:49,281 basehttp 124 "GET /mobile/15009718759/count/ HTTP/1.1" 200 23
+INFO 2021-06-16 21:14:49,335 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-16 21:14:49,347 basehttp 124 "GET /index/ HTTP/1.1" 200 30173
+WARNING 2021-06-16 21:14:49,486 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-16 21:14:49,554 base 152 Not Found: /carts/simple/
+WARNING 2021-06-16 21:14:49,554 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 2972
+INFO 2021-06-16 21:15:56,361 basehttp 124 "GET /register/ HTTP/1.1" 200 4609
+INFO 2021-06-16 21:15:56,371 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-16 21:15:56,468 basehttp 124 "GET /image_codes/7fbf1635-0591-4340-aa18-5e77b13b859a/ HTTP/1.1" 200 2748
+WARNING 2021-06-21 21:43:59,448 base 152 Not Found: /
+WARNING 2021-06-21 21:43:59,448 basehttp 124 "GET / HTTP/1.1" 404 3115
+WARNING 2021-06-21 21:43:59,677 base 152 Not Found: /favicon.ico
+WARNING 2021-06-21 21:43:59,678 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3166
+INFO 2021-06-21 21:44:13,882 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:44:13,893 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-21 21:44:13,895 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-21 21:44:13,895 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-21 21:44:13,895 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-21 21:44:13,896 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-21 21:44:13,897 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-21 21:44:13,917 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6541
+INFO 2021-06-21 21:44:13,917 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-21 21:44:13,936 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-21 21:44:13,947 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-21 21:44:13,947 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+ERROR 2021-06-21 21:44:13,994 exception 135 Internal Server Error: /image_codes/e26c5b27-d0ff-41dd-8916-4be153a8a2fe/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:14,032 basehttp 124 "GET /image_codes/e26c5b27-d0ff-41dd-8916-4be153a8a2fe/ HTTP/1.1" 500 116797
+ERROR 2021-06-21 21:44:17,101 exception 135 Internal Server Error: /image_codes/6d061056-c578-479a-8f32-2f9eae134240/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:17,129 basehttp 124 "GET /image_codes/6d061056-c578-479a-8f32-2f9eae134240/ HTTP/1.1" 500 116594
+ERROR 2021-06-21 21:44:17,835 exception 135 Internal Server Error: /image_codes/e2562c87-980c-41fc-ad1f-91b9d0cd47b6/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:17,862 basehttp 124 "GET /image_codes/e2562c87-980c-41fc-ad1f-91b9d0cd47b6/ HTTP/1.1" 500 116590
+ERROR 2021-06-21 21:44:18,067 exception 135 Internal Server Error: /image_codes/25c3fb9b-4d6f-499c-a6f5-2041fdb207f7/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:18,095 basehttp 124 "GET /image_codes/25c3fb9b-4d6f-499c-a6f5-2041fdb207f7/ HTTP/1.1" 500 116592
+ERROR 2021-06-21 21:44:18,273 exception 135 Internal Server Error: /image_codes/1c01b7b1-159a-4343-ac5c-e0ada4cbe10f/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:18,300 basehttp 124 "GET /image_codes/1c01b7b1-159a-4343-ac5c-e0ada4cbe10f/ HTTP/1.1" 500 116594
+WARNING 2021-06-21 21:44:21,174 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-21 21:44:24,704 exception 135 Internal Server Error: /image_codes/2b57eae0-d3e8-446f-b473-9b8c38700a02/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' %uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:44:24,734 basehttp 124 "GET /image_codes/2b57eae0-d3e8-446f-b473-9b8c38700a02/ HTTP/1.1" 500 116579
+ERROR 2021-06-21 21:46:06,164 exception 135 Internal Server Error: /image_codes/bb51e7d7-afbb-4db9-8277-74b673ce2b89/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 24, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 567, in connect
+    self.on_connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 664, in on_connect
+    if nativestr(self.read_response()) != 'OK':
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 340, in read_response
+    raise error
+redis.exceptions.AuthenticationError: Authentication required.
+ERROR 2021-06-21 21:46:06,192 basehttp 124 "GET /image_codes/bb51e7d7-afbb-4db9-8277-74b673ce2b89/ HTTP/1.1" 500 116583
+INFO 2021-06-21 21:50:07,542 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:50:07,552 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 21:50:07,663 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:50:07,715 basehttp 124 "GET /image_codes/d7bf830e-4feb-47b7-96ea-8976ed68387d/ HTTP/1.1" 200 3298
+INFO 2021-06-21 21:50:15,746 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:51:04,279 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:51:04,294 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 21:51:04,410 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:51:04,442 basehttp 124 "GET /image_codes/8e1c86e7-8449-423a-bdd2-95528398647d/ HTTP/1.1" 200 2910
+INFO 2021-06-21 21:51:13,146 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:51:15,192 basehttp 124 "GET /image_codes/495bc601-dae9-4e18-a292-33c84bd2f632/ HTTP/1.1" 200 3279
+INFO 2021-06-21 21:53:59,403 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:53:59,417 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+WARNING 2021-06-21 21:53:59,529 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:53:59,563 basehttp 124 "GET /image_codes/29976b66-f2b4-460d-bba4-08e243fbd92f/ HTTP/1.1" 200 2998
+INFO 2021-06-21 21:54:07,111 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:56:20,231 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:56:20,244 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-21 21:56:20,248 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-21 21:56:20,249 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-21 21:56:20,249 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-21 21:56:20,249 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-21 21:56:20,250 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-21 21:56:20,327 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-21 21:56:20,327 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-21 21:56:20,355 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-21 21:56:20,355 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-21 21:56:20,356 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-21 21:56:20,376 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:56:20,392 basehttp 124 "GET /image_codes/be5ab9c8-b888-4398-b61b-a35d1a7aa822/ HTTP/1.1" 200 3040
+WARNING 2021-06-21 21:56:20,444 base 152 Not Found: /favicon.ico
+WARNING 2021-06-21 21:56:20,445 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3166
+INFO 2021-06-21 21:56:24,265 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:56:25,987 basehttp 124 "GET /image_codes/ed5da7a2-3631-45be-8f8a-afa826f951fe/ HTTP/1.1" 200 2913
+WARNING 2021-06-21 21:56:33,573 base 152 Not Found: /sms_code/15009718757/
+WARNING 2021-06-21 21:56:33,573 basehttp 124 "GET /sms_code/15009718757/?image_code=IRWS&uuid=ed5da7a2-3631-45be-8f8a-afa826f951fe HTTP/1.1" 404 3258
+INFO 2021-06-21 21:56:33,588 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 21:56:37,942 base 152 Not Found: /sms_code/15009718757/
+WARNING 2021-06-21 21:56:37,944 basehttp 124 "GET /sms_code/15009718757/?image_code=IRWS&uuid=ed5da7a2-3631-45be-8f8a-afa826f951fe HTTP/1.1" 404 3258
+INFO 2021-06-21 21:56:37,947 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:57:45,966 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:57:45,981 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6587
+WARNING 2021-06-21 21:57:46,100 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:57:46,133 basehttp 124 "GET /image_codes/f1d376ce-9500-49f2-9c4f-e52bc6bd4a15/ HTTP/1.1" 200 3135
+INFO 2021-06-21 21:57:53,853 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 21:58:02,590 base 152 Not Found: /sms_code/15009718757
+WARNING 2021-06-21 21:58:02,591 basehttp 124 "GET /sms_code/15009718757?image_code=G5GC&uuid=f1d376ce-9500-49f2-9c4f-e52bc6bd4a15 HTTP/1.1" 404 3255
+INFO 2021-06-21 21:58:02,595 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 21:59:21,289 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 21:59:21,301 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 21:59:21,427 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 21:59:21,443 basehttp 124 "GET /image_codes/98fd4879-f4f3-42de-839c-219ab88d3341/ HTTP/1.1" 200 2886
+INFO 2021-06-21 21:59:26,866 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 21:59:56,322 base 152 Not Found: /sms_code/15009718757
+WARNING 2021-06-21 21:59:56,322 basehttp 124 "GET /sms_code/15009718757?image_code=STA8&uuid=98fd4879-f4f3-42de-839c-219ab88d3341 HTTP/1.1" 404 3255
+INFO 2021-06-21 21:59:56,325 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:01:01,833 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:01:01,854 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+WARNING 2021-06-21 22:01:01,973 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:01:01,995 basehttp 124 "GET /image_codes/9eaf52fe-0efb-4456-802f-e475df511a08/ HTTP/1.1" 200 3290
+INFO 2021-06-21 22:01:02,043 basehttp 124 "GET /image_codes/9eaf52fe-0efb-4456-802f-e475df511a08/ HTTP/1.1" 200 3078
+INFO 2021-06-21 22:01:09,164 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:01:22,996 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:01:23,016 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-21 22:01:23,019 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-21 22:01:23,020 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-21 22:01:23,020 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-21 22:01:23,021 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-21 22:01:23,022 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-21 22:01:23,099 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-21 22:01:23,100 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-21 22:01:23,130 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-21 22:01:23,130 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-21 22:01:23,132 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-21 22:01:23,138 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:01:23,177 basehttp 124 "GET /image_codes/a42184ab-836c-44fc-b37f-d5ea9437a901/ HTTP/1.1" 200 3087
+WARNING 2021-06-21 22:01:23,228 base 152 Not Found: /favicon.ico
+WARNING 2021-06-21 22:01:23,229 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3166
+INFO 2021-06-21 22:01:28,786 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:01:41,229 basehttp 124 "GET /sms_codes/15009718757?image_code=XVNB&uuid=a42184ab-836c-44fc-b37f-d5ea9437a901 HTTP/1.1" 301 0
+ERROR 2021-06-21 22:01:41,232 exception 135 Internal Server Error: /sms_codes/15009718757/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 38, in get
+    sms_falg = redis_conn.get('sms_%s' % mobile, 1)
+TypeError: get() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 44, in get
+    logger.error('redis—È÷§¬Î“Ï≥££∫' + e)
+TypeError: can only concatenate str (not "TypeError") to str
+ERROR 2021-06-21 22:01:41,259 basehttp 124 "GET /sms_codes/15009718757/?image_code=XVNB&uuid=a42184ab-836c-44fc-b37f-d5ea9437a901 HTTP/1.1" 500 88987
+INFO 2021-06-21 22:01:41,261 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:03:21,002 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:03:21,013 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:03:21,140 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:03:21,169 basehttp 124 "GET /image_codes/5a780422-d481-40e4-9a9a-f21d7e8efc72/ HTTP/1.1" 200 3064
+INFO 2021-06-21 22:03:27,342 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:03:29,520 basehttp 124 "GET /image_codes/d30d8c7e-2f32-43e1-8268-8e2fa7293da4/ HTTP/1.1" 200 3080
+INFO 2021-06-21 22:03:31,602 basehttp 124 "GET /image_codes/fea36806-152b-488e-9b9b-4259c7c28567/ HTTP/1.1" 200 3176
+INFO 2021-06-21 22:03:46,117 basehttp 124 "GET /sms_codes/15009718757?image_code=DMVK&uuid=fea36806-152b-488e-9b9b-4259c7c28567 HTTP/1.1" 301 0
+INFO 2021-06-21 22:03:46,121 basehttp 124 "GET /sms_codes/15009718757/?image_code=DMVK&uuid=fea36806-152b-488e-9b9b-4259c7c28567 HTTP/1.1" 200 84
+INFO 2021-06-21 22:03:46,121 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:04:52,507 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:04:52,518 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:04:52,635 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:04:52,667 basehttp 124 "GET /image_codes/9a680c47-3ff3-49ef-a396-7d0330d7f13f/ HTTP/1.1" 200 3147
+INFO 2021-06-21 22:04:58,631 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:05:10,979 basehttp 124 "GET /sms_codes/15009718757?image_code=PPXU&uuid=9a680c47-3ff3-49ef-a396-7d0330d7f13f HTTP/1.1" 301 0
+INFO 2021-06-21 22:05:10,983 basehttp 124 "GET /sms_codes/15009718757/?image_code=PPXU&uuid=9a680c47-3ff3-49ef-a396-7d0330d7f13f HTTP/1.1" 200 84
+INFO 2021-06-21 22:05:10,983 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:05:30,756 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:05:30,769 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:05:30,902 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:05:30,919 basehttp 124 "GET /image_codes/17d6aa41-045c-48b3-b7de-99700e4f8567/ HTTP/1.1" 200 3145
+INFO 2021-06-21 22:05:33,901 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:05:39,400 basehttp 124 "GET /sms_codes/15009718757?image_code=QKSG&uuid=17d6aa41-045c-48b3-b7de-99700e4f8567 HTTP/1.1" 301 0
+INFO 2021-06-21 22:05:39,420 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:05:44,827 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:09:26,358 basehttp 124 "GET /register/ HTTP/1.1" 200 4652
+INFO 2021-06-21 22:09:26,379 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-21 22:09:26,386 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-21 22:09:26,387 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-21 22:09:26,388 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-21 22:09:26,388 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-21 22:09:26,391 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-21 22:09:26,460 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-21 22:09:26,460 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-21 22:09:26,494 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-21 22:09:26,496 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-21 22:09:26,504 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:09:26,504 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2021-06-21 22:09:26,529 basehttp 124 "GET /image_codes/86186a41-7dd1-40b6-aaee-6a48fce522c4/ HTTP/1.1" 200 3292
+WARNING 2021-06-21 22:09:26,588 base 152 Not Found: /favicon.ico
+WARNING 2021-06-21 22:09:26,589 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3166
+INFO 2021-06-21 22:09:32,180 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:09:38,121 basehttp 124 "GET /sms_codes/15009718757?image_code=TAGZ&uuid=86186a41-7dd1-40b6-aaee-6a48fce522c4 HTTP/1.1" 301 0
+INFO 2021-06-21 22:09:38,130 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:09:55,670 basehttp 124 "GET /sms_codes/15009718757/?image_code=TAGZ&uuid=86186a41-7dd1-40b6-aaee-6a48fce522c4 HTTP/1.1" 200 63
+INFO 2021-06-21 22:32:53,777 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+INFO 2021-06-21 22:32:53,791 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:32:53,916 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:32:53,945 basehttp 124 "GET /image_codes/47d49363-42ac-4b24-9530-b9e6b6d22ee1/ HTTP/1.1" 200 3545
+INFO 2021-06-21 22:33:00,008 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:33:08,951 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:33:17,778 basehttp 124 "GET /sms_codes/15009718757?image_code=EBKX&uuid=47d49363-42ac-4b24-9530-b9e6b6d22ee1 HTTP/1.1" 301 0
+INFO 2021-06-21 22:33:17,790 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:33:18,016 basehttp 124 "GET /sms_codes/15009718757/?image_code=EBKX&uuid=47d49363-42ac-4b24-9530-b9e6b6d22ee1 HTTP/1.1" 200 63
+INFO 2021-06-21 22:33:36,354 basehttp 124 "POST /register/ HTTP/1.1" 200 4789
+INFO 2021-06-21 22:33:36,359 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:33:36,363 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+ERROR 2021-06-21 22:33:36,368 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 500 59
+ERROR 2021-06-21 22:33:36,369 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 500 59
+WARNING 2021-06-21 22:33:36,500 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:33:36,530 basehttp 124 "GET /image_codes/e19d80fd-a5dd-4335-8b90-5866f00e5917/ HTTP/1.1" 200 3206
+INFO 2021-06-21 22:34:52,345 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:35:03,098 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:35:09,398 basehttp 124 "GET /sms_codes/15009718757?image_code=ESKY&uuid=e19d80fd-a5dd-4335-8b90-5866f00e5917 HTTP/1.1" 301 0
+INFO 2021-06-21 22:35:09,405 basehttp 124 "GET /sms_codes/15009718757/?image_code=ESKY&uuid=e19d80fd-a5dd-4335-8b90-5866f00e5917 HTTP/1.1" 200 78
+INFO 2021-06-21 22:35:09,407 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:35:29,826 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:35:30,066 basehttp 124 "GET /sms_codes/15009718757/?image_code=ESKY&uuid=e19d80fd-a5dd-4335-8b90-5866f00e5917 HTTP/1.1" 200 63
+INFO 2021-06-21 22:35:44,599 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:35:44,603 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 22:36:52,720 csrf 160 Forbidden (CSRF cookie not set.): /register/
+WARNING 2021-06-21 22:36:52,724 basehttp 124 "POST /register/ HTTP/1.1" 403 2857
+INFO 2021-06-21 22:37:29,330 basehttp 124 "GET /register HTTP/1.1" 301 0
+INFO 2021-06-21 22:37:29,359 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+INFO 2021-06-21 22:37:29,455 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:37:29,490 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:37:29,535 basehttp 124 "GET /image_codes/e97c0c05-d799-4953-85e6-b4b58a0b7814/ HTTP/1.1" 200 3031
+INFO 2021-06-21 22:38:59,316 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+WARNING 2021-06-21 22:38:59,457 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:38:59,487 basehttp 124 "GET /image_codes/e6dadf39-c011-422e-8a77-29df8453491f/ HTTP/1.1" 200 3228
+INFO 2021-06-21 22:39:05,231 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:39:14,560 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:39:23,198 basehttp 124 "GET /sms_codes/15009718757?image_code=MAKN&uuid=e6dadf39-c011-422e-8a77-29df8453491f HTTP/1.1" 301 0
+INFO 2021-06-21 22:39:23,209 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:39:23,442 basehttp 124 "GET /sms_codes/15009718757/?image_code=MAKN&uuid=e6dadf39-c011-422e-8a77-29df8453491f HTTP/1.1" 200 63
+INFO 2021-06-21 22:39:41,365 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:39:41,366 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 22:41:21,337 csrf 160 Forbidden (CSRF cookie not set.): /register/
+WARNING 2021-06-21 22:41:21,340 basehttp 124 "POST /register/ HTTP/1.1" 403 2857
+INFO 2021-06-21 22:42:05,505 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+INFO 2021-06-21 22:42:05,602 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:42:05,653 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:42:05,699 basehttp 124 "GET /image_codes/5f1e61ce-c2e8-4fa0-aa68-8810e4083add/ HTTP/1.1" 200 3331
+INFO 2021-06-21 22:42:09,870 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:42:16,499 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:42:19,016 basehttp 124 "GET /image_codes/18b35100-82d3-4ca5-a69c-27d2629a5fcc/ HTTP/1.1" 200 3478
+INFO 2021-06-21 22:42:26,704 basehttp 124 "GET /sms_codes/15009718757?image_code=ETDW&uuid=18b35100-82d3-4ca5-a69c-27d2629a5fcc HTTP/1.1" 301 0
+INFO 2021-06-21 22:42:26,715 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:42:26,945 basehttp 124 "GET /sms_codes/15009718757/?image_code=ETDW&uuid=18b35100-82d3-4ca5-a69c-27d2629a5fcc HTTP/1.1" 200 63
+INFO 2021-06-21 22:42:58,422 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:42:58,438 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:43:33,555 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+WARNING 2021-06-21 22:43:33,678 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:43:33,707 basehttp 124 "GET /image_codes/d2afbffc-bf0f-480d-89c0-90f32862e5e1/ HTTP/1.1" 200 2986
+INFO 2021-06-21 22:43:37,703 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:43:51,346 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:43:52,489 basehttp 124 "GET /image_codes/b9fc8c6a-e9c7-4982-aa2e-5984ed09c6be/ HTTP/1.1" 200 3223
+INFO 2021-06-21 22:43:54,174 basehttp 124 "GET /image_codes/81eba7f5-412d-4c97-84f7-aae2b37bee26/ HTTP/1.1" 200 3570
+INFO 2021-06-21 22:44:01,350 basehttp 124 "GET /sms_codes/15009718757?image_code=PRKG&uuid=81eba7f5-412d-4c97-84f7-aae2b37bee26 HTTP/1.1" 301 0
+INFO 2021-06-21 22:44:01,356 basehttp 124 "GET /sms_codes/15009718757/?image_code=PRKG&uuid=81eba7f5-412d-4c97-84f7-aae2b37bee26 HTTP/1.1" 200 78
+INFO 2021-06-21 22:44:01,358 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:44:42,038 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:44:48,673 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:44:48,826 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:44:48,993 basehttp 124 "GET /sms_codes/15009718757/?image_code=PRKG&uuid=81eba7f5-412d-4c97-84f7-aae2b37bee26 HTTP/1.1" 200 63
+INFO 2021-06-21 22:45:06,818 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:45:06,821 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:46:22,774 basehttp 124 "POST /register/ HTTP/1.1" 200 4786
+ERROR 2021-06-21 22:46:22,776 basehttp 124 "POST /register/ HTTP/1.1" 500 59
+INFO 2021-06-21 22:46:22,791 basehttp 124 "POST /register/ HTTP/1.1" 200 4786
+INFO 2021-06-21 22:46:22,806 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2021-06-21 22:46:22,928 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:46:22,962 basehttp 124 "GET /image_codes/45b73dbb-13f5-46eb-807d-5e9888e98dea/ HTTP/1.1" 200 2829
+INFO 2021-06-21 22:47:56,433 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+WARNING 2021-06-21 22:47:56,564 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:47:56,598 basehttp 124 "GET /image_codes/5c0bced0-8bdc-490d-9db5-2e0394d7bff0/ HTTP/1.1" 200 3243
+INFO 2021-06-21 22:48:00,989 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:48:08,519 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:48:09,191 basehttp 124 "GET /image_codes/1d92b537-5a70-483b-aa98-06cce78fe2c1/ HTTP/1.1" 200 2911
+INFO 2021-06-21 22:48:10,771 basehttp 124 "GET /image_codes/0ca0626b-9326-47b7-889b-a40fccb00276/ HTTP/1.1" 200 3062
+INFO 2021-06-21 22:48:18,600 basehttp 124 "GET /sms_codes/15009718757?image_code=UJ3Z&uuid=0ca0626b-9326-47b7-889b-a40fccb00276 HTTP/1.1" 301 0
+INFO 2021-06-21 22:48:18,611 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:48:18,875 basehttp 124 "GET /sms_codes/15009718757/?image_code=UJ3Z&uuid=0ca0626b-9326-47b7-889b-a40fccb00276 HTTP/1.1" 200 63
+INFO 2021-06-21 22:48:38,900 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:48:38,902 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-21 22:50:37,110 csrf 160 Forbidden (CSRF cookie not set.): /register/
+WARNING 2021-06-21 22:50:37,114 basehttp 124 "POST /register/ HTTP/1.1" 403 2857
+INFO 2021-06-21 22:50:42,844 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+WARNING 2021-06-21 22:50:42,978 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:50:43,030 basehttp 124 "GET /image_codes/2549de1f-d48c-4264-ab08-c3e188421d1c/ HTTP/1.1" 200 3389
+INFO 2021-06-21 22:50:48,244 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:50:56,296 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:50:57,059 basehttp 124 "GET /image_codes/5485485f-5678-4ed5-ad58-98d66ab4e043/ HTTP/1.1" 200 3083
+INFO 2021-06-21 22:50:57,915 basehttp 124 "GET /image_codes/2ba6c9e9-f4f9-4994-ab7d-3046663dba13/ HTTP/1.1" 200 3078
+INFO 2021-06-21 22:51:07,403 basehttp 124 "GET /sms_codes/15009718757?image_code=FM6A&uuid=2ba6c9e9-f4f9-4994-ab7d-3046663dba13 HTTP/1.1" 301 0
+INFO 2021-06-21 22:51:07,409 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:51:07,939 basehttp 124 "GET /sms_codes/15009718757/?image_code=FM6A&uuid=2ba6c9e9-f4f9-4994-ab7d-3046663dba13 HTTP/1.1" 200 63
+INFO 2021-06-21 22:51:27,159 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:51:27,160 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-21 22:51:42,273 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-21 22:51:42,290 basehttp 124 "GET /index/ HTTP/1.1" 200 30173
+INFO 2021-06-21 22:51:42,309 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-21 22:51:42,309 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-21 22:51:42,310 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-21 22:51:42,403 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-21 22:51:42,404 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+WARNING 2021-06-21 22:51:42,416 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-21 22:51:42,431 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-21 22:51:42,431 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-21 22:51:42,432 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-21 22:51:42,433 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-21 22:51:42,433 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-21 22:51:42,435 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-21 22:51:42,446 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-21 22:51:42,447 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-21 22:51:42,450 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-21 22:51:42,451 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-21 22:51:42,451 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-21 22:51:42,452 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-21 22:51:42,452 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+WARNING 2021-06-21 22:51:42,502 base 152 Not Found: /carts/simple/
+WARNING 2021-06-21 22:51:42,504 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3178
+INFO 2021-06-21 22:51:42,506 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2021-06-23 20:29:46,507 base 152 Not Found: /
+WARNING 2021-06-23 20:29:46,508 basehttp 124 "GET / HTTP/1.1" 404 3115
+WARNING 2021-06-23 20:29:46,728 base 152 Not Found: /favicon.ico
+WARNING 2021-06-23 20:29:46,728 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3166
+INFO 2021-06-23 20:29:52,198 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+INFO 2021-06-23 20:29:52,234 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-23 20:29:52,304 basehttp 124 "GET /image_codes/77cbb7c3-c126-4147-a2ec-0aa084c9ad62/ HTTP/1.1" 200 3310
+INFO 2021-06-23 20:29:59,222 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:30:23,075 basehttp 124 "GET /register/ HTTP/1.1" 200 4677
+INFO 2021-06-23 20:30:23,146 basehttp 124 "GET /image_codes/887b50b3-051c-4f1f-be93-08db0906e3c8/ HTTP/1.1" 200 3525
+INFO 2021-06-23 20:30:25,275 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:30:34,437 basehttp 124 "GET /sms_codes/15009718757?image_code=6UMC&uuid=887b50b3-051c-4f1f-be93-08db0906e3c8 HTTP/1.1" 301 0
+INFO 2021-06-23 20:30:34,445 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:30:38,491 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:30:39,623 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+WARNING 2021-06-23 20:30:42,435 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-23 20:30:46,163 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:30:58,460 basehttp 124 "GET /sms_codes/15009718757/?image_code=6UMC&uuid=887b50b3-051c-4f1f-be93-08db0906e3c8 HTTP/1.1" 200 78
+INFO 2021-06-23 20:30:59,634 basehttp 124 "GET /sms_codes/15009718757/?image_code=6UMC&uuid=887b50b3-051c-4f1f-be93-08db0906e3c8 HTTP/1.1" 200 78
+INFO 2021-06-23 20:31:04,271 basehttp 124 "GET /sms_codes/15009718757/?image_code=6UMC&uuid=887b50b3-051c-4f1f-be93-08db0906e3c8 HTTP/1.1" 200 63
+INFO 2021-06-23 20:31:04,277 basehttp 124 "GET /sms_codes/15009718757/?image_code=6UMC&uuid=887b50b3-051c-4f1f-be93-08db0906e3c8 HTTP/1.1" 200 78
+WARNING 2021-06-23 20:49:30,607 base 152 Not Found: /
+WARNING 2021-06-23 20:49:30,608 basehttp 124 "GET / HTTP/1.1" 404 3285
+INFO 2021-06-23 20:49:38,202 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-23 20:49:38,287 basehttp 124 "GET /image_codes/fafe6b3d-66f2-4b4e-966a-327ab1a384aa/ HTTP/1.1" 200 3413
+INFO 2021-06-23 20:49:42,121 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:49:50,430 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:49:50,498 basehttp 124 "GET /image_codes/912c3e36-ed60-4f7c-a9e2-6f8bbfebea53/ HTTP/1.1" 200 3692
+INFO 2021-06-23 20:49:58,020 basehttp 124 "GET /sms_codes/15009718757?image_code=FNAZ&uuid=912c3e36-ed60-4f7c-a9e2-6f8bbfebea53 HTTP/1.1" 301 0
+INFO 2021-06-23 20:49:58,061 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:49:58,141 basehttp 124 "GET /sms_codes/15009718757/?image_code=FNAZ&uuid=912c3e36-ed60-4f7c-a9e2-6f8bbfebea53 HTTP/1.1" 200 63
+INFO 2021-06-23 20:50:20,660 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:50:20,660 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-23 20:50:20,720 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-23 20:50:20,730 basehttp 124 "GET /index/ HTTP/1.1" 200 30163
+WARNING 2021-06-23 20:50:20,943 base 152 Not Found: /carts/simple/
+WARNING 2021-06-23 20:50:20,944 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3348
+INFO 2021-06-23 20:52:30,777 basehttp 124 "GET /login/ HTTP/1.1" 200 2833
+INFO 2021-06-23 20:52:30,788 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-23 20:52:30,788 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2021-06-23 20:52:30,868 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-23 20:52:30,869 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
