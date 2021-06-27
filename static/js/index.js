@@ -13,14 +13,14 @@ var vm = new Vue({
     },
     mounted(){
         // 获取购物车数据
-        this.get_carts();
+        // this.get_carts();
         this.username=getCookie('username');
         console.log(this.username);
     },
     methods: {
         // 获取购物车数据
         get_carts(){
-            var url = this.host+'/carts/simple/';
+            let url = this.host+'/carts/simple/';
             axios.get(url, {
                     responseType: 'json',
                 })

@@ -1500,3 +1500,1185 @@ INFO 2021-06-23 20:52:30,788 basehttp 124 "GET /static/images/logo02.png HTTP/1.
 INFO 2021-06-23 20:52:30,788 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
 INFO 2021-06-23 20:52:30,868 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
 INFO 2021-06-23 20:52:30,869 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:01:01,316 base 152 Not Found: /
+WARNING 2021-06-27 09:01:01,318 basehttp 124 "GET / HTTP/1.1" 404 3285
+WARNING 2021-06-27 09:01:01,524 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:01:01,524 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+WARNING 2021-06-27 09:01:09,742 base 152 Not Found: /
+WARNING 2021-06-27 09:01:09,743 basehttp 124 "GET / HTTP/1.1" 404 3285
+INFO 2021-06-27 09:01:15,612 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+WARNING 2021-06-27 09:01:19,859 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:02:20,762 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 09:02:20,774 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-06-27 09:02:20,917 basehttp 124 "GET /image_codes/2c5aff58-60dd-4448-adbe-c5a8c8d92b46/ HTTP/1.1" 200 3425
+WARNING 2021-06-27 09:02:21,166 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:02:24,636 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:02:35,875 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:11:59,760 basehttp 124 "GET /sms_codes/15009718757?image_code=YVBA&uuid=2c5aff58-60dd-4448-adbe-c5a8c8d92b46 HTTP/1.1" 301 0
+INFO 2021-06-27 09:11:59,767 basehttp 124 "GET /sms_codes/15009718757/?image_code=YVBA&uuid=2c5aff58-60dd-4448-adbe-c5a8c8d92b46 HTTP/1.1" 200 72
+INFO 2021-06-27 09:11:59,768 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:12:47,620 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:12:47,747 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:12:47,786 basehttp 124 "GET /image_codes/00d25f84-3a8b-4d12-b100-66b25ec6f73a/ HTTP/1.1" 200 3460
+INFO 2021-06-27 09:12:51,558 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:13:02,263 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:13:02,910 basehttp 124 "GET /image_codes/875a37ce-2c32-4af9-bd4b-fe14ed638bdc/ HTTP/1.1" 200 3166
+INFO 2021-06-27 09:13:07,366 basehttp 124 "GET /image_codes/d6ccdc09-2ff2-4baa-8359-141b813839e4/ HTTP/1.1" 200 3253
+INFO 2021-06-27 09:13:14,273 basehttp 124 "GET /sms_codes/15009718757?image_code=XK4U&uuid=d6ccdc09-2ff2-4baa-8359-141b813839e4 HTTP/1.1" 301 0
+INFO 2021-06-27 09:13:14,285 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:13:37,961 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+ERROR 2021-06-27 09:13:59,975 exception 135 Internal Server Error: /sms_codes/15009718757/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 198, in _read_from_socket
+    data = recv(self._sock, socket_read_size)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\_compat.py", line 72, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 231, in can_read
+    raise_on_timeout=False)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 223, in _read_from_socket
+    (ex.args,))
+redis.exceptions.ConnectionError: Error while reading from socket: (10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 46, in get
+    sms_falg = redis_conn.get('sms_falg_%s' % mobile)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1202, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 55, in get
+    logger.error('redis验证码异常：' + e)
+TypeError: can only concatenate str (not "ConnectionError") to str
+ERROR 2021-06-27 09:14:02,169 basehttp 124 "GET /sms_codes/15009718757/?image_code=XK4U&uuid=d6ccdc09-2ff2-4baa-8359-141b813839e4 HTTP/1.1" 500 154508
+INFO 2021-06-27 09:14:46,586 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:14:46,721 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-27 09:14:48,787 exception 135 Internal Server Error: /image_codes/07d751e2-e206-4240-bc18-f846e98997c3/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:48,917 basehttp 124 "GET /image_codes/07d751e2-e206-4240-bc18-f846e98997c3/ HTTP/1.1" 500 121615
+INFO 2021-06-27 09:14:52,169 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:14:52,288 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:14:54,140 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 09:14:54,171 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:14:54,176 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:14:54,176 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:14:54,177 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:14:54,179 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 09:14:54,181 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:14:54,243 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:14:54,243 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-27 09:14:54,278 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-27 09:14:54,287 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 09:14:54,288 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:14:54,290 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+ERROR 2021-06-27 09:14:54,367 exception 135 Internal Server Error: /image_codes/707a9d85-a72e-4c79-a4c0-756399118c49/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:54,497 basehttp 124 "GET /image_codes/707a9d85-a72e-4c79-a4c0-756399118c49/ HTTP/1.1" 500 121643
+ERROR 2021-06-27 09:14:54,499 basehttp 124 "GET /image_codes/707a9d85-a72e-4c79-a4c0-756399118c49/ HTTP/1.1" 500 59
+ERROR 2021-06-27 09:14:55,302 exception 135 Internal Server Error: /image_codes/707a9d85-a72e-4c79-a4c0-756399118c49/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:55,424 basehttp 124 "GET /image_codes/707a9d85-a72e-4c79-a4c0-756399118c49/ HTTP/1.1" 500 121474
+INFO 2021-06-27 09:14:55,598 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:14:55,732 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-27 09:14:56,364 exception 135 Internal Server Error: /image_codes/1a4854d1-f0a3-4fbc-a053-c1c9bd93b73c/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:56,485 basehttp 124 "GET /image_codes/1a4854d1-f0a3-4fbc-a053-c1c9bd93b73c/ HTTP/1.1" 500 121910
+ERROR 2021-06-27 09:14:56,486 basehttp 124 "GET /image_codes/1a4854d1-f0a3-4fbc-a053-c1c9bd93b73c/ HTTP/1.1" 500 59
+ERROR 2021-06-27 09:14:57,020 exception 135 Internal Server Error: /image_codes/1a4854d1-f0a3-4fbc-a053-c1c9bd93b73c/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:57,140 basehttp 124 "GET /image_codes/1a4854d1-f0a3-4fbc-a053-c1c9bd93b73c/ HTTP/1.1" 500 121474
+ERROR 2021-06-27 09:14:57,801 exception 135 Internal Server Error: /image_codes/7297416d-9b00-4ac2-a0ca-e6f0e1338dee/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:57,920 basehttp 124 "GET /image_codes/7297416d-9b00-4ac2-a0ca-e6f0e1338dee/ HTTP/1.1" 500 121616
+ERROR 2021-06-27 09:14:57,921 basehttp 124 "GET /image_codes/7297416d-9b00-4ac2-a0ca-e6f0e1338dee/ HTTP/1.1" 500 59
+INFO 2021-06-27 09:14:58,070 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:14:58,190 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-27 09:14:58,743 exception 135 Internal Server Error: /image_codes/7297416d-9b00-4ac2-a0ca-e6f0e1338dee/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:14:58,887 basehttp 124 "GET /image_codes/7297416d-9b00-4ac2-a0ca-e6f0e1338dee/ HTTP/1.1" 500 121475
+ERROR 2021-06-27 09:15:00,234 exception 135 Internal Server Error: /image_codes/442d3e5e-f0d0-4a81-8a45-112d66e12130/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:15:00,365 basehttp 124 "GET /image_codes/442d3e5e-f0d0-4a81-8a45-112d66e12130/ HTTP/1.1" 500 121617
+WARNING 2021-06-27 09:15:00,381 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:15:00,382 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+INFO 2021-06-27 09:15:01,556 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:15:01,678 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2021-06-27 09:15:03,717 exception 135 Internal Server Error: /image_codes/13e066c8-f682-4ae5-85df-5cbde962b6ac/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\verifications\views.py", line 28, in get
+    redis_conn.setex('img_%s' % uuid, 120, text)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2021-06-27 09:15:03,863 basehttp 124 "GET /image_codes/13e066c8-f682-4ae5-85df-5cbde962b6ac/ HTTP/1.1" 500 121621
+INFO 2021-06-27 09:16:20,516 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 09:16:20,537 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:16:20,541 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:16:20,542 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:16:20,542 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:16:20,543 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 09:16:20,544 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:16:20,613 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:16:20,613 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-27 09:16:20,645 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-27 09:16:20,645 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:16:20,647 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-27 09:16:20,667 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:16:20,684 basehttp 124 "GET /image_codes/f92f6d51-f25a-40f9-b1ae-df6a6f03c09e/ HTTP/1.1" 200 3545
+WARNING 2021-06-27 09:16:20,742 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:16:20,744 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+INFO 2021-06-27 09:16:25,583 basehttp 124 "GET /image_codes/f9766513-bb96-46f3-969c-496681ca35e6/ HTTP/1.1" 200 3084
+INFO 2021-06-27 09:16:29,276 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:16:37,333 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:16:45,486 basehttp 124 "GET /sms_codes/15009718757?image_code=S8HV&uuid=f9766513-bb96-46f3-969c-496681ca35e6 HTTP/1.1" 301 0
+INFO 2021-06-27 09:16:45,496 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:16:45,581 basehttp 124 "GET /sms_codes/15009718757/?image_code=S8HV&uuid=f9766513-bb96-46f3-969c-496681ca35e6 HTTP/1.1" 200 63
+INFO 2021-06-27 09:19:50,426 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:19:50,560 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:19:50,594 basehttp 124 "GET /image_codes/ad73c295-03a8-497c-8c52-f1f9bc6caa29/ HTTP/1.1" 200 3290
+INFO 2021-06-27 09:19:53,593 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:20:05,145 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:20:05,871 basehttp 124 "GET /image_codes/000c7b25-fc52-4b97-b3c2-055256df846f/ HTTP/1.1" 200 3417
+INFO 2021-06-27 09:20:06,986 basehttp 124 "GET /image_codes/44bea2b5-4245-457e-b686-5e2a4d360f80/ HTTP/1.1" 200 3117
+INFO 2021-06-27 09:20:08,049 basehttp 124 "GET /image_codes/33c3c649-105e-434c-8654-eb33247e1831/ HTTP/1.1" 200 3141
+INFO 2021-06-27 09:20:20,769 basehttp 124 "GET /sms_codes/15009718757?image_code=M6FM&uuid=33c3c649-105e-434c-8654-eb33247e1831 HTTP/1.1" 301 0
+INFO 2021-06-27 09:20:20,796 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:22:50,720 basehttp 124 "GET /sms_codes/15009718757/?image_code=M6FM&uuid=33c3c649-105e-434c-8654-eb33247e1831 HTTP/1.1" 200 63
+INFO 2021-06-27 09:23:53,247 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:23:53,383 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:23:53,419 basehttp 124 "GET /image_codes/cd581c94-4d54-4e2a-a920-6b059bdedf5e/ HTTP/1.1" 200 2972
+INFO 2021-06-27 09:24:08,358 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:24:17,795 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:24:24,958 basehttp 124 "GET /sms_codes/15009718757?image_code=K5UP&uuid=cd581c94-4d54-4e2a-a920-6b059bdedf5e HTTP/1.1" 301 0
+INFO 2021-06-27 09:24:24,965 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:24:30,403 basehttp 124 "GET /sms_codes/15009718757/?image_code=K5UP&uuid=cd581c94-4d54-4e2a-a920-6b059bdedf5e HTTP/1.1" 200 63
+INFO 2021-06-27 09:31:04,054 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+WARNING 2021-06-27 09:31:04,187 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:31:04,209 basehttp 124 "GET /image_codes/5ff14eec-5a44-4f0a-a21c-d6bc6da4c097/ HTTP/1.1" 200 3191
+INFO 2021-06-27 09:31:10,432 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:31:16,996 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:31:17,055 basehttp 124 "GET /image_codes/7924fc97-16b3-452e-9613-86ae96de6760/ HTTP/1.1" 200 3288
+INFO 2021-06-27 09:31:19,018 basehttp 124 "GET /image_codes/db0dbc0b-136b-4182-99ae-ff47889cf144/ HTTP/1.1" 200 3005
+INFO 2021-06-27 09:31:19,753 basehttp 124 "GET /image_codes/92698c57-21a1-4f61-a292-96364324c55d/ HTTP/1.1" 200 2794
+INFO 2021-06-27 09:31:25,703 basehttp 124 "GET /sms_codes/15009718757?image_code=K4DF&uuid=92698c57-21a1-4f61-a292-96364324c55d HTTP/1.1" 301 0
+INFO 2021-06-27 09:31:25,714 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:31:30,001 basehttp 124 "GET /sms_codes/15009718757/?image_code=K4DF&uuid=92698c57-21a1-4f61-a292-96364324c55d HTTP/1.1" 200 63
+INFO 2021-06-27 09:31:53,670 basehttp 124 "GET /usernames/admin/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:31:53,693 basehttp 124 "GET /mobile/15009718757/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 09:31:53,738 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-27 09:31:53,751 basehttp 124 "GET /index/ HTTP/1.1" 200 30163
+WARNING 2021-06-27 09:31:53,891 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2021-06-27 09:31:53,981 base 152 Not Found: /carts/simple/
+WARNING 2021-06-27 09:31:53,981 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3348
+INFO 2021-06-27 09:32:09,552 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+WARNING 2021-06-27 09:32:09,678 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:33:18,905 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+WARNING 2021-06-27 09:33:19,025 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:34:24,774 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+WARNING 2021-06-27 09:34:24,899 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:36:06,803 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+WARNING 2021-06-27 09:36:06,934 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:37:27,563 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+INFO 2021-06-27 09:37:27,589 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:37:27,596 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:37:27,599 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:37:27,600 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:37:27,601 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:37:27,602 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:37:27,604 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:37:27,667 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 09:37:27,709 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:37:27,709 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 09:37:27,710 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:37:27,712 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:37:27,806 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:37:27,807 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+INFO 2021-06-27 09:39:00,495 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+INFO 2021-06-27 09:39:00,521 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:39:00,524 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:39:00,526 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:39:00,531 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:39:00,532 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:39:00,532 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:39:00,534 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:39:00,594 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 09:39:00,629 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:39:00,632 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 09:39:00,638 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:39:00,640 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:39:23,263 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+INFO 2021-06-27 09:39:23,278 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2021-06-27 09:39:23,404 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:39:27,425 basehttp 124 "GET /login/ HTTP/1.1" 200 2879
+INFO 2021-06-27 09:39:27,446 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:39:27,453 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:39:27,454 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:39:27,459 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:39:27,460 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:39:27,460 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:39:27,463 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:39:27,527 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:39:27,567 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:39:27,567 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:39:27,568 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:39:27,572 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:40:47,686 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:40:47,714 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:40:47,718 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:40:47,721 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:40:47,722 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:40:47,723 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:40:47,724 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:40:47,725 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:40:47,790 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1757
+WARNING 2021-06-27 09:40:47,826 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:40:47,845 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:40:47,845 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:40:47,848 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:40:47,931 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:40:47,932 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+INFO 2021-06-27 09:41:24,168 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:41:24,201 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:41:24,201 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:41:24,206 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:41:24,210 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:41:24,212 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:41:24,213 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:41:24,216 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:41:24,290 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1757
+WARNING 2021-06-27 09:41:24,330 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:41:24,334 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:41:24,335 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:41:24,338 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:42:46,000 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:42:46,011 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2021-06-27 09:42:48,800 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:42:53,191 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:42:53,208 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:42:53,218 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:42:53,218 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:42:53,221 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:42:53,221 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:42:53,222 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:42:53,225 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:42:53,292 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1757
+INFO 2021-06-27 09:42:53,330 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:42:53,337 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 09:42:53,338 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:42:53,341 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:45:32,905 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:45:32,932 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:45:32,939 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:45:32,939 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:45:32,942 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:45:32,944 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:45:32,945 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:45:32,947 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:45:33,011 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:45:33,050 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:45:33,051 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:45:33,052 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:45:33,054 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:45:48,185 basehttp 124 "GET /login/ HTTP/1.1" 200 2874
+INFO 2021-06-27 09:45:48,212 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:45:48,213 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:45:48,217 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:45:48,221 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:45:48,222 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:45:48,223 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:45:48,225 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:45:48,290 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:45:48,328 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:45:48,331 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:45:48,333 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:45:48,335 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:45:48,435 base 152 Not Found: /favicon.ico
+WARNING 2021-06-27 09:45:48,436 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+WARNING 2021-06-27 09:46:01,291 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2021-06-27 09:46:01,297 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+WARNING 2021-06-27 09:48:22,295 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2021-06-27 09:48:22,299 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2021-06-27 09:48:30,128 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 09:48:30,138 basehttp 124 "GET /login/ HTTP/1.1" 200 3018
+INFO 2021-06-27 09:48:30,168 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:48:30,169 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:48:30,169 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:48:30,170 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:48:30,170 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:48:30,173 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:48:30,178 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:48:30,242 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 09:48:30,283 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:48:30,290 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 09:48:30,290 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:48:30,293 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:49:40,524 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2021-06-27 09:49:40,529 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2021-06-27 09:51:00,732 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 09:51:00,742 basehttp 124 "GET /login/ HTTP/1.1" 200 2959
+INFO 2021-06-27 09:51:00,771 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:51:00,772 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:51:00,773 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:51:00,774 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:51:00,775 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:51:00,779 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:51:00,781 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:51:00,848 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 09:51:00,890 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 09:51:00,890 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:51:00,892 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:51:00,894 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:51:02,589 basehttp 124 "GET /login/ HTTP/1.1" 200 2959
+INFO 2021-06-27 09:51:02,618 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:51:02,625 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:51:02,630 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:51:02,630 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:51:02,632 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:51:02,634 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:51:02,637 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:51:02,700 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:51:02,739 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:51:02,760 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:51:02,761 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:51:02,763 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:51:25,400 basehttp 124 "GET /login/ HTTP/1.1" 200 2959
+INFO 2021-06-27 09:51:25,419 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:51:25,424 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:51:25,426 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:51:25,428 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:51:25,429 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:51:25,430 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:51:25,431 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:51:25,493 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:51:25,523 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:51:25,529 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:51:25,529 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:51:25,531 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:52:06,121 basehttp 124 "GET /login/ HTTP/1.1" 200 2948
+INFO 2021-06-27 09:52:06,140 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:52:06,148 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:52:06,148 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:52:06,151 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:52:06,151 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:52:06,152 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:52:06,154 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:52:06,214 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:52:06,245 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:52:06,250 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:52:06,251 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:52:06,253 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2021-06-27 09:52:20,354 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2021-06-27 09:52:20,358 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2021-06-27 09:57:01,659 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 09:57:01,689 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:57:01,695 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:57:01,696 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:57:01,698 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:57:01,699 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 09:57:01,699 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:57:01,702 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:57:01,775 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 09:57:01,816 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:57:01,838 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 09:57:01,838 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 09:57:01,840 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 09:57:27,804 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 09:57:27,810 basehttp 124 "GET /index/ HTTP/1.1" 200 30163
+INFO 2021-06-27 09:57:27,835 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 09:57:27,836 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 09:57:27,836 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 09:57:27,843 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 09:57:27,844 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 09:57:27,849 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 09:57:27,851 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 09:57:27,851 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-27 09:57:27,853 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 09:57:27,913 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 09:57:27,927 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2021-06-27 09:57:27,928 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 09:57:27,938 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 09:57:27,940 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 09:57:27,972 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 09:57:27,973 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-27 09:57:27,973 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 09:57:27,975 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-27 09:57:27,981 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+WARNING 2021-06-27 09:57:27,982 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 09:57:27,984 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-27 09:57:27,990 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 09:57:27,991 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 09:57:27,992 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 09:57:27,992 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-27 09:57:27,993 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+WARNING 2021-06-27 09:57:28,044 base 152 Not Found: /carts/simple/
+WARNING 2021-06-27 09:57:28,046 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3348
+INFO 2021-06-27 09:57:28,048 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:27:24,727 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:27:24,753 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:27:24,754 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:27:24,755 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:27:24,757 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:27:24,758 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:27:24,761 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:27:24,763 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:27:24,827 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:27:24,866 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:27:24,867 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 11:27:24,876 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:27:24,878 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:28:45,125 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:28:45,148 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:28:45,174 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:28:45,177 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:28:45,180 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:28:45,180 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:28:45,183 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:28:45,183 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:28:45,185 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:28:45,252 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:28:45,291 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:28:45,294 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 11:28:45,300 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:28:45,303 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:29:25,438 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:29:25,461 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:29:25,483 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:29:25,488 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:29:25,491 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:29:25,493 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:29:25,494 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:29:25,495 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:29:25,497 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:29:25,563 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:29:25,613 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 11:29:25,614 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:29:25,615 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:29:25,617 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:30:26,936 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:30:26,952 basehttp 124 "GET /index/ HTTP/1.1" 200 30163
+INFO 2021-06-27 11:30:26,989 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:30:26,992 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:30:26,992 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:30:26,996 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:30:27,006 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:30:27,008 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:30:27,012 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 11:30:27,013 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-27 11:30:27,014 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:30:27,080 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 11:30:27,093 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2021-06-27 11:30:27,094 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 11:30:27,098 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 11:30:27,142 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-27 11:30:27,142 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 11:30:27,148 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 11:30:27,151 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+WARNING 2021-06-27 11:30:27,151 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:30:27,154 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-27 11:30:27,159 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 11:30:27,161 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-27 11:30:27,162 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 11:30:27,165 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 11:30:27,166 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 11:30:27,167 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-27 11:30:27,168 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+WARNING 2021-06-27 11:30:27,206 base 152 Not Found: /carts/simple/
+WARNING 2021-06-27 11:30:27,208 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3348
+INFO 2021-06-27 11:30:27,209 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:30:35,740 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:30:35,766 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:30:35,774 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:30:35,776 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:30:35,779 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:30:35,780 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:30:35,781 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:30:35,783 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:30:35,848 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 11:30:35,899 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:30:35,905 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:30:35,906 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:30:35,909 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:31:33,367 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:31:33,375 basehttp 124 "GET /index/ HTTP/1.1" 200 30163
+INFO 2021-06-27 11:31:33,402 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:31:33,409 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:31:33,410 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:31:33,412 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:31:33,422 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:31:33,426 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:31:33,428 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:31:33,429 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 11:31:33,429 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+ERROR 2021-06-27 11:31:33,431 basehttp 124 "POST /login/ HTTP/1.1" 500 59
+INFO 2021-06-27 11:31:33,432 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:31:33,484 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 11:31:33,495 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2021-06-27 11:31:33,496 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 11:31:33,547 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 11:31:33,549 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 11:31:33,549 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 11:31:33,549 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+WARNING 2021-06-27 11:31:33,550 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:31:33,550 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-27 11:31:33,554 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:31:33,554 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 11:31:33,569 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-27 11:31:33,570 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-27 11:31:33,574 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 11:31:33,576 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 11:31:33,579 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 11:31:33,579 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-27 11:31:33,580 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+WARNING 2021-06-27 11:31:33,643 base 152 Not Found: /carts/simple/
+WARNING 2021-06-27 11:31:33,644 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3348
+INFO 2021-06-27 11:31:42,391 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:31:42,417 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:31:42,425 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:31:42,428 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:31:42,430 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:31:42,432 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:31:42,433 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:31:42,435 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:31:42,500 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 11:31:42,534 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:31:42,553 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:31:42,555 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:31:42,557 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:33:26,006 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:33:26,029 basehttp 124 "GET /login/ HTTP/1.1" 200 3027
+INFO 2021-06-27 11:33:26,051 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:33:26,055 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:33:26,056 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:33:26,061 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:33:26,061 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:33:26,062 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:33:26,064 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:33:26,126 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:33:26,169 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 11:33:26,170 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:33:26,171 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:33:26,173 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:34:27,686 basehttp 124 "POST /login/ HTTP/1.1" 200 3027
+ERROR 2021-06-27 11:34:27,692 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\utils.py", line 12, in get_user_by_account
+    user = User.objects.get(username=account)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+apps.users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\views.py", line 92, in post
+    user = authenticate(username=username, password=password)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\venv\lib\site-packages\django\contrib\auth\__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\utils.py", line 24, in authenticate
+    user = get_user_by_account(username)
+  File "C:\Users\MACHENIKE\PycharmProjects\meiduo_mall\apps\users\utils.py", line 15, in get_user_by_account
+    except user.DoesNotExist:
+UnboundLocalError: local variable 'user' referenced before assignment
+INFO 2021-06-27 11:34:27,726 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:34:27,729 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:34:27,731 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:34:27,734 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:34:27,735 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:34:27,735 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:34:27,743 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+ERROR 2021-06-27 11:34:27,876 basehttp 124 "POST /login/ HTTP/1.1" 500 114525
+INFO 2021-06-27 11:34:27,882 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:34:27,888 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 11:34:27,889 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:34:27,890 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+ERROR 2021-06-27 11:34:27,891 basehttp 124 "POST /login/ HTTP/1.1" 500 59
+INFO 2021-06-27 11:34:27,893 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:36:56,918 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:36:56,930 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2021-06-27 11:36:56,953 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:36:56,957 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:36:56,961 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:36:56,963 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:36:56,966 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:36:56,967 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:36:56,970 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:36:57,035 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:36:57,069 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:36:57,070 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 11:36:57,080 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:36:57,082 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:37:08,737 basehttp 124 "POST /login/ HTTP/1.1" 200 3155
+INFO 2021-06-27 11:37:08,759 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:37:08,761 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:37:08,766 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:37:08,767 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:37:08,768 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:37:08,769 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:37:08,770 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:37:08,837 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:37:08,880 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:37:08,881 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 11:37:08,881 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:37:08,884 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:38:09,852 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:38:09,863 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2021-06-27 11:38:09,891 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:38:09,895 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:38:09,896 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:38:09,899 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:38:09,900 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:38:09,901 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:38:09,903 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:38:09,964 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:38:10,007 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2021-06-27 11:38:10,007 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:38:10,008 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:38:10,012 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:38:23,412 basehttp 124 "POST /login/ HTTP/1.1" 200 3167
+INFO 2021-06-27 11:38:23,434 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:38:23,438 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:38:23,439 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:38:23,441 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:38:23,442 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:38:23,444 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:38:23,445 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:38:23,508 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+INFO 2021-06-27 11:38:23,547 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:38:23,548 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2021-06-27 11:38:23,548 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:38:23,552 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:44:26,036 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2021-06-27 11:44:26,048 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2021-06-27 11:44:26,065 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:44:26,065 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:44:26,066 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:44:26,067 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:44:26,067 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:44:26,068 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:44:26,073 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:44:26,146 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 11:44:26,177 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:44:26,200 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:44:26,200 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:44:26,201 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:44:33,173 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:44:33,184 basehttp 124 "GET /index/ HTTP/1.1" 200 30193
+INFO 2021-06-27 11:44:33,199 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:44:33,205 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:44:33,206 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:44:33,206 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:44:33,207 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:44:33,207 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 11:44:33,208 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:44:33,214 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:44:33,214 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-27 11:44:33,280 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 11:44:33,291 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1391
+INFO 2021-06-27 11:44:33,292 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 11:44:33,296 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 11:44:33,298 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 11:44:33,300 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2021-06-27 11:44:33,332 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-27 11:44:33,332 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-27 11:44:33,334 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 11:44:33,335 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+WARNING 2021-06-27 11:44:33,336 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:44:33,336 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 11:44:33,336 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 11:44:33,341 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 11:44:33,345 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 11:44:33,345 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-27 11:44:33,345 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-27 11:44:33,414 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:46:07,954 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 11:46:07,974 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:46:07,979 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:46:07,979 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:46:07,979 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:46:07,981 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:46:07,982 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:46:08,060 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:46:08,060 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+WARNING 2021-06-27 11:46:08,093 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:46:08,094 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-27 11:46:08,095 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:46:08,096 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2021-06-27 11:46:08,134 basehttp 124 "GET /image_codes/aff35722-2a65-4438-b6c9-1bb05c0f2b0d/ HTTP/1.1" 200 3478
+INFO 2021-06-27 11:46:10,954 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:23,825 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:24,517 basehttp 124 "GET /image_codes/e414c60f-9302-46c2-ab15-b6f3dc2a1b05/ HTTP/1.1" 200 2956
+INFO 2021-06-27 11:46:29,305 basehttp 124 "GET /image_codes/a6774cda-8a71-45e8-9472-9c0d7b655833/ HTTP/1.1" 200 3411
+INFO 2021-06-27 11:46:39,098 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:46:39,101 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:39,225 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 63
+INFO 2021-06-27 11:46:41,932 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:46:41,936 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 78
+INFO 2021-06-27 11:46:41,936 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:46,352 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:46:46,355 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 78
+INFO 2021-06-27 11:46:46,356 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:47,185 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:46:47,189 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 78
+INFO 2021-06-27 11:46:47,189 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:46:47,362 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:46:47,366 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 78
+INFO 2021-06-27 11:46:47,366 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:47:03,034 basehttp 124 "GET /sms_codes/13519784153?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 301 0
+INFO 2021-06-27 11:47:03,037 basehttp 124 "GET /sms_codes/13519784153/?image_code=C7MB&uuid=a6774cda-8a71-45e8-9472-9c0d7b655833 HTTP/1.1" 200 78
+INFO 2021-06-27 11:47:03,038 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:47:32,350 basehttp 124 "GET /image_codes/ac59bdf9-005f-409d-9410-8e8af54ce3c3/ HTTP/1.1" 200 3237
+INFO 2021-06-27 11:47:33,693 basehttp 124 "GET /image_codes/da5c3747-5971-4440-9ea1-df59f434ca20/ HTTP/1.1" 200 3086
+INFO 2021-06-27 11:47:34,443 basehttp 124 "GET /image_codes/adc03125-1045-4aa6-8fc7-76ef745e8494/ HTTP/1.1" 200 2841
+INFO 2021-06-27 11:47:34,694 basehttp 124 "GET /image_codes/bc79a1b0-62b9-4728-93bd-fcd73d0a01bb/ HTTP/1.1" 200 3408
+INFO 2021-06-27 11:47:35,919 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 11:47:35,941 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:47:35,942 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:47:35,943 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:47:35,944 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:47:35,944 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:47:35,945 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:47:36,023 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:47:36,024 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-27 11:47:36,056 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-27 11:47:36,058 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:47:36,059 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-27 11:47:36,066 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:47:36,096 basehttp 124 "GET /image_codes/7a2157c8-1d79-4982-a93d-0062bc22797b/ HTTP/1.1" 200 3264
+INFO 2021-06-27 11:47:37,067 basehttp 124 "GET /image_codes/f71eba42-d29a-4601-8cf8-4977148413e0/ HTTP/1.1" 200 3110
+INFO 2021-06-27 11:47:47,895 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:50:05,252 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:50:05,312 basehttp 124 "GET /image_codes/fec5e999-8f00-4a8d-bfc9-4f86a55e7e42/ HTTP/1.1" 200 3130
+INFO 2021-06-27 11:50:13,486 basehttp 124 "GET /sms_codes/13519784153?image_code=jxed&uuid=fec5e999-8f00-4a8d-bfc9-4f86a55e7e42 HTTP/1.1" 301 0
+INFO 2021-06-27 11:50:13,490 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:50:13,607 basehttp 124 "GET /sms_codes/13519784153/?image_code=jxed&uuid=fec5e999-8f00-4a8d-bfc9-4f86a55e7e42 HTTP/1.1" 200 63
+INFO 2021-06-27 11:50:26,303 basehttp 124 "GET /mobile/13519784153/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:50:26,304 basehttp 124 "GET /usernames/itcast/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:50:26,375 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:50:26,391 basehttp 124 "GET /index/ HTTP/1.1" 200 30193
+INFO 2021-06-27 11:50:26,409 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:50:26,409 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:50:26,409 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:50:26,409 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:50:26,409 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:50:26,410 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 11:50:26,411 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:50:26,415 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:50:26,420 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-27 11:50:26,488 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 11:50:26,500 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1391
+INFO 2021-06-27 11:50:26,501 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 11:50:26,507 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 11:50:26,507 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 11:50:26,540 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-27 11:50:26,541 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 11:50:26,541 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-27 11:50:26,541 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 11:50:26,541 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-27 11:50:26,542 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+WARNING 2021-06-27 11:50:26,545 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:50:26,548 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 11:50:26,554 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 11:50:26,554 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-27 11:50:26,554 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 11:50:26,554 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-27 11:50:26,613 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:50:44,825 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2021-06-27 11:50:44,851 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:50:44,854 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:50:44,858 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:50:44,858 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:50:44,859 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2021-06-27 11:50:44,859 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:50:44,861 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:50:44,938 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1767
+WARNING 2021-06-27 11:50:44,968 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:50:44,990 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:50:44,990 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2021-06-27 11:50:44,991 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2021-06-27 11:51:01,313 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-06-27 11:51:01,318 basehttp 124 "GET /index/ HTTP/1.1" 200 30193
+INFO 2021-06-27 11:51:01,335 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:51:01,338 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:51:01,338 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:51:01,340 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:51:01,341 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:51:01,344 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:51:01,345 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2021-06-27 11:51:01,346 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2021-06-27 11:51:01,346 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:51:01,421 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-06-27 11:51:01,432 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1391
+INFO 2021-06-27 11:51:01,433 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2021-06-27 11:51:01,438 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2021-06-27 11:51:01,439 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2021-06-27 11:51:01,468 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2021-06-27 11:51:01,469 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2021-06-27 11:51:01,469 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2021-06-27 11:51:01,469 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2021-06-27 11:51:01,470 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2021-06-27 11:51:01,470 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+WARNING 2021-06-27 11:51:01,474 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:51:01,482 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2021-06-27 11:51:01,483 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2021-06-27 11:51:01,484 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2021-06-27 11:51:01,484 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2021-06-27 11:51:01,484 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2021-06-27 11:51:01,547 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-06-27 11:53:43,981 basehttp 124 "GET /register/ HTTP/1.1" 200 4667
+INFO 2021-06-27 11:53:44,000 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-06-27 11:53:44,002 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2021-06-27 11:53:44,002 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2021-06-27 11:53:44,002 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2021-06-27 11:53:44,003 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2021-06-27 11:53:44,004 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-06-27 11:53:44,081 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2021-06-27 11:53:44,081 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 6588
+INFO 2021-06-27 11:53:44,114 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2021-06-27 11:53:44,116 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-06-27 11:53:44,117 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2021-06-27 11:53:44,126 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2021-06-27 11:53:44,153 basehttp 124 "GET /image_codes/d16aad96-6003-4795-b974-56c5aa3c77e3/ HTTP/1.1" 200 3162
+INFO 2021-06-27 11:53:51,139 basehttp 124 "GET /usernames/yangmi/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:54:13,564 basehttp 124 "GET /mobile/18818780178/count/ HTTP/1.1" 200 23
+INFO 2021-06-27 11:54:25,333 basehttp 124 "GET /sms_codes/18818780178?image_code=YLKY&uuid=d16aad96-6003-4795-b974-56c5aa3c77e3 HTTP/1.1" 301 0
+INFO 2021-06-27 11:54:25,338 basehttp 124 "GET /sms_codes/18818780178/?image_code=YLKY&uuid=d16aad96-6003-4795-b974-56c5aa3c77e3 HTTP/1.1" 200 63
+INFO 2021-06-27 11:54:25,351 basehttp 124 "GET /mobile/18818780178/count/ HTTP/1.1" 200 23

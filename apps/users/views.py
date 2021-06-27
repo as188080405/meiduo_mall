@@ -1,7 +1,7 @@
 import re
 
 from django import http
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.db import DatabaseError
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
@@ -14,6 +14,7 @@ from django.views import View
 from apps.users.models import User
 
 
+# 获取注册页面
 class RegisterView(View):
 
     # 获取注册页面
@@ -70,9 +71,34 @@ class RegisterView(View):
         # 记住当前注册用户，免登录
         login(request, user)
         # 响应网站首页
-        return redirect(reverse('contents:index'))
+        response = redirect(reverse('contents:index'))
+        response.set_cookie('username', user.username)
+        return response
 
 
+# 用户登录
 class LoginView(View):
     def get(self, request):
         return render(request, 'login.html')
+
+    def post(self, request):
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        remembered = request.POST.get('remembered')
+        if not all([username, password, remembered]):
+            return http.HttpResponseBadRequest('缺少必传参数')
+        if not re.match(r'^[a-zA-Z0-9_]{5,20}$', username):
+            return http.HttpResponseBadRequest('用户名必须为5-20位的数字/字母/下划线')
+        if not re.match(r'^[a-zA-Z0-9]{5,20}$', password):
+            return http.HttpResponseBadRequest('密码必须为5-20位数字/字母/下划线')
+        user = authenticate(username=username, password=password)
+        if user is None:
+            return render(request, 'login.html', {'errmsg': '用户名或密码错误'})
+        login(request, user)
+        if remembered != 'on':
+            request.session.set_expiry(0)
+        else:
+            request.session.set_expiry(3600*24*15)
+        response = redirect(reverse('contents:index'))
+        response.set_cookie('username', user.username)
+        return response
