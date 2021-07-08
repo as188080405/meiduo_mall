@@ -210,4 +210,7 @@ LOGGING = {
 }
 
 # 允许那些主机访问
-ALLOWED_HOSTS = ['127.0.0.1','www.meiduo.site']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.meiduo.site']
+
+# 判断用户未登录后跳转页面，配置
+LOGIN_URL = '/login/'

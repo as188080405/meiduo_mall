@@ -1,7 +1,8 @@
 import re
 
 from django import http
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import DatabaseError
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
@@ -102,3 +103,24 @@ class LoginView(View):
         response = redirect(reverse('contents:index'))
         response.set_cookie('username', user.username)
         return response
+
+
+# 用户退出登录
+class LogoutView(View):
+
+    def get(self, request):
+        # 清楚session
+        logout(request)
+        # 重定向到登录页
+        response = redirect(reverse('users:login'))
+        # 删除用户cookie信息
+        response.delete_cookie('username')
+        return response
+
+
+
+
+class UserInfoView(LoginRequiredMixin, View):
+
+    def get(self, request):
+        return render(request, 'user_center_info.html')
